@@ -1,6 +1,6 @@
 const prompt = require("prompt-sync")();
 const crearTarea = require ("./CrearTareas");
-const menuVerTareas = require("./MenuVerTareas");
+const menuVerTareas = require("./menuVerTareas");
 const buscarTarea = require("./buscarTarea");
 
     let tareas=[];//array para guardar todas las tareas
