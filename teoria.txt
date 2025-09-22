@@ -1,0 +1,24 @@
+Ejercicio 1
+Parte A
+1 Reglas estrictas:
+- Sintaxis básica heredada de C: se usan las llaves {} para bloques, el punto y coma ; para finalizar las sentencias.
+- Estructuras de control: if, else, switch, for, while, do while.
+- Declaracion de variables, mediante var, let y const.
+- Tipos de datos dinámicos: números, strings, booleanos, null, undefined, objetos y arrays.
+- Funciones con unidades modulares
+
+2 Creencias de los profesionales:
+Se cree que JS es un lenguaje versátil, se ejecuta en navegadores como en servidores, lo que lo hace un lenguaje universal.
+Tiene una flexibilidad en el tipado, al ser dinámico permite escribir codigo con menos ceremonias. 
+Tiene alta integración con la web.
+
+Parte B
+1- Sí, JavaScript tiene reglas sintáticas y semánticas bien definidas, la documentación oficial está publicada por ECMA International.
+Aunque la sintaxis es clara, hay ambiguedades en la semántica (ej. == vs ===) que generan confusión.
+2- El código puede ejecutarse y probarse fácilmente en cualquier navegador moderno o en node.js. No es un lenguaje compilado fuertemente tipado por lo que muchos errores solo se detectan en el momento de ejecución.
+3- Es confiable en el sentido de que funciona de manera consistente en entornos modernos. Sin embargo la confiabilidad se ve afectada por el tipado débil y coerción implícita.
+4- Es parcialmente ortogonal. no todos los tipos pueden usarse de la misma forma (ej. null y undefined tienen comportamientos especiales). Algunas combinaciones producen resultados inesperados (ej. []+{}vs {}+[]).
+5- Tiene cierta consistencia: estructuras de control. Pero no es totalmente uniforme, existen varias formas de decalarar variables, las funciones pueden declararse de múltiples maneras.
+6- Si es extensible, se puedem definir nuevas funciones, modulos y librerias.
+También existen subconjuntos del lenguaje usados en ciertos contextos: JSON, strict mode y typescript
+7- Es altamente portable.
