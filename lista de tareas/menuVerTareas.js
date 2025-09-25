@@ -6,7 +6,7 @@ function menuVerTareas(tareas, cantidadTareas)
 {
     let opcionVer;
      while (opcionVer !== "0")
-     {
+    {
         console.log("\n--- Ver tareas ---");
         console.log("1. Todas");
         console.log("2. Pendientes");
@@ -33,15 +33,20 @@ function menuVerTareas(tareas, cantidadTareas)
                         i++;
                     }
                      console.log("\nEstas son sus tareas. Desea ver el detalle de alguna?");
-                        let detalle;
-                    while (detalle !== "0" || detalle > cantidadTareas + 1)
-                    {
-                        detalle = prompt("Ingrese el número de la tarea o presione 0 para volver: ");
-                        if (detalle !== "0") 
+                    let detalle;
+                do {
+                    detalle = parseInt(prompt("Ingrese el número de la tarea o presione 0 para volver: "));
+
+                        if (detalle > 0 && detalle <= cantidadTareas) 
                         {
                             detalleTarea(detalle, tareas);
                         }
-        }      
+                        else if (detalle !== 0) 
+                        {
+                            console.log("Número inválido, intente de nuevo.");
+                        }
+
+                    } while (detalle !== 0);   
                 }   
                 break;
             case "2":
@@ -58,7 +63,7 @@ function menuVerTareas(tareas, cantidadTareas)
                 default:
                     console.log("\nOpción no válida, intente de nuevo.");
         }
-     }   
+    }   
 }
 
 function mostrarPorEstado(tareas, cantidadTareas, estado) 
@@ -90,17 +95,20 @@ function mostrarPorEstado(tareas, cantidadTareas, estado)
     {
         console.log("\nEstas son sus tareas. Desea ver el detalle de alguna?");
         let detalle;
-        while (detalle !== "0" || detalle > cantidadTareas + 1)
-        {
-            detalle = prompt("Ingrese el número de la tarea o presione 0 para volver: ");
-                if (detalle !== "0") 
+        do {
+            detalle = parseInt(prompt("Ingrese el número de la tarea o presione 0 para volver: "));
+
+                if (detalle > 0 && detalle <= cantidadTareas) 
                 {
                     detalleTarea(detalle, tareas);
                 }
-        }      
-    }
-            
-    
+                    else if (detalle !== 0) 
+                {
+                    console.log("Número inválido, intente de nuevo.");
+                }
+
+            } while (detalle !== 0);       
+    }   
 }
 
 module.exports = menuVerTareas;

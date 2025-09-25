@@ -5,17 +5,17 @@ const prompt = require("prompt-sync")();
     let titulo = prompt("Ingrese el título de la tarea: ");
     let descripcion = prompt("Ingrese la descripción (opcional):");
     let vencimiento = prompt("Ingrese la fecha de vencimiento (ej: 2025-09-30) o deje vacío:");
-    let dificultad = prompt("Ingrese dificultad (1=fácil, 2=medio, 3=difícil). ");
+    let dificultad = parseInt(prompt("Ingrese dificultad (1=fácil, 2=medio, 3=difícil). "));
 
-        if (dificultad === "1")
+        if (dificultad === 1)
         {
             dificultad = "facil";
         }
-        else if (dificultad === "2")
+        else if (dificultad === 2)
         {
             dificultad = "medio";
         }
-        else if (dificultad === "3")
+        else if (dificultad === 3)
         {
             dificultad = "dificil";
         }
@@ -30,7 +30,7 @@ const prompt = require("prompt-sync")();
         dificultad: dificultad || "Fácil",
     }
 
-console.log("Tarea guardada con exito:", tarea);
+console.log("\nTarea guardada con exito\n");
 
     //guardo la tarea en el array (manualmente para no usar push)
 

@@ -7,8 +7,7 @@ const buscarTarea = require("./buscarTarea");
     let cantidadTareas=0;
     let opcion;
 
-    
-    
+function main(){
 while (opcion != "4")
 {
     console.log("1. Crear tarea\n2. Ver tareas\n3. Buscar Tarea\n4. Salir");
@@ -33,5 +32,7 @@ while (opcion != "4")
             console.log("Opción no válida, intente de nuevo.");
             break;
     }
-    
 }
+}
+
+main();
